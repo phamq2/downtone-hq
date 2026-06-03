@@ -420,7 +420,7 @@ html.img-minimal .archive-figure { display: none; }
 /*  COLOPHON / FOOTER                                                      */
 /* ====================================================================== */
 .colophon { padding: 110px 0 80px; border-top: 1px solid var(--rd-line); }
-.colophon-mark { height: 30px; width: auto; margin-bottom: 36px; display: block; }
+.colophon-mark { height: 30px; width: auto; margin-bottom: 36px; display: block; filter: brightness(0) invert(1); }
 .colophon-line {
   font-family: var(--font-instrument), Georgia, serif;
   font-style: italic;
