@@ -1,7 +1,6 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
-import Image from 'next/image'
 
 const SECTIONS = [
   { id: 'bet',       n: '00', t: 'The Bet' },
@@ -40,14 +39,8 @@ export default function SideNav() {
   return (
     <nav className="sidenav" aria-label="Sections">
       <button onClick={scrollTop} className="sidenav-mark-link" aria-label="Back to top">
-        <Image
-          src="/brand/Downtone-logo-white.svg"
-          alt="Downtone"
-          width={120}
-          height={22}
-          className="sidenav-mark"
-          style={{ width: 'auto' }}
-        />
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/brand/Downtone-logo-white.svg" alt="Downtone" className="sidenav-mark" />
       </button>
       <ol>
         {SECTIONS.map(s => (

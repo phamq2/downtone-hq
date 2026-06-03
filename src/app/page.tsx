@@ -421,14 +421,8 @@ export default function Home() {
         {/* Colophon */}
         <footer className="colophon">
           <div className="wrap">
-            <Image
-              src="/brand/Downtone-logo-white.svg"
-              alt="Downtone"
-              width={120}
-              height={30}
-              className="colophon-mark"
-              style={{ filter: 'brightness(0) invert(1)' }}
-            />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/brand/Downtone-logo-white.svg" alt="Downtone" className="colophon-mark" />
             <p className="colophon-line">Good sound. Culture. Community.</p>
             <div className="colophon-meta">
               Sound Liberation Front · 301 Grand Street · Lower East Side, New York<br />
