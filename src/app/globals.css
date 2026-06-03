@@ -101,6 +101,7 @@ body::after {
 .sidenav-mark-link {
   align-self: flex-start; display: block; margin-bottom: 40px;
   pointer-events: auto; text-decoration: none; border: 0;
+  background: none; padding: 0; cursor: pointer;
 }
 .sidenav-mark {
   height: 22px; width: auto; display: block;
