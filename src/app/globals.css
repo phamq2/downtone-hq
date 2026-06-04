@@ -125,7 +125,16 @@ body::after {
 .sidenav a:hover { color: var(--rd-fg); }
 .sidenav a.active { color: var(--rd-accent); }
 .sidenav a.active .n { opacity: 1; }
-@media (min-width: 1240px) { .sidenav { display: flex; } }
+@media (min-width: 1240px) {
+  .sidenav { display: flex; }
+  /* Push all content right of the fixed nav */
+  body { padding-left: 240px; }
+  /* Full-bleed elements break back out to the viewport edge */
+  .hero, .band {
+    margin-left: -240px;
+    width: 100vw;
+  }
+}
 
 /* ---- Layout -------------------------------------------------------------- */
 .wrap { max-width: 1180px; margin: 0 auto; padding: 0 32px; position: relative; z-index: 2; }
